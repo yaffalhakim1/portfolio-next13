@@ -50,6 +50,12 @@ export default function Sidebar() {
     pathname = "/blog";
   }
   const { theme, setTheme } = useTheme();
+  const [isMounted, setIsMounted] = React.useState(false);
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
 
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
@@ -70,7 +76,7 @@ export default function Sidebar() {
           </button>
         </div>
         <nav
-          className="flex overflow-hidden flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex overflow-hidden flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative "
           id="nav"
         >
           <div className="flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
@@ -120,7 +126,7 @@ export default function Sidebar() {
                   key={path}
                   href={path}
                   className={clsx(
-                    "transition-all hover:text-neutral-800  py-[5px] px-[10px]",
+                    "transition-all hover:text-neutral-800 dark:text-neutral-800  text-black py-[5px] px-[10px]",
                     {
                       "text-neutral-500": !isActive,
                       "font-bold": isActive,
