@@ -1,91 +1,52 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Bio from "@/components/bio";
+import { ArrowIcon, GitHubIcon } from "@/components/icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className="flex flex-col gap-[36px]">
+      <h1 className="font-bold text-[48px]">Muhammad Yafi Alhakim</h1>
+      <p>
+        I'm Yafi, a{" "}
+        <span className="font-bold">
+          Final Year Computer Eng Student from Diponegoro University, Indonesia
+        </span>
+      </p>
+      {/* @ts-expect-error Server Component */}
+      <Bio />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
+      <p className="">
+        Hi there! I'm a final year student with a passion for web development. I
+        have experience working with React JS, NextJS, Flutter and I'm always
+        looking to learn more. I'm dedicated to creating clean, functional, and
+        responsive web applications that provide an excellent user experience.
+        When I'm not coding, I enjoy staying up-to-date with the latest trends
+        in technology and spending time with my friends and family.
+      </p>
+      <div className="inline-flex gap-8 ">
         <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/yaffalhakim1"
+          className="flex w-full border border-neutral-800 rounded-lg p-4 no-underline items-center text-black hover:dark:bg-neutral-900 hover:text-white hover:bg-neutral-100 transition-all justify-between"
         >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
+          <div className="flex items-center">
+            <div className="ml-3">GitHub</div>
+          </div>
+          <ArrowIcon />
         </a>
-
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
           rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
           target="_blank"
-          rel="noopener noreferrer"
+          href="https://bento.me/yafialhakim"
+          className="flex w-full border border-neutral-800 rounded-lg p-4 no-underline items-center text-black hover:dark:bg-neutral-900 hover:text-white hover:bg-neutral-100 transition-all justify-between"
         >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+          <div className="flex items-center">
+            <div className="ml-3">Bento</div>
+          </div>
+          <ArrowIcon />
         </a>
       </div>
-    </main>
-  )
+    </div>
+  );
 }
