@@ -12,22 +12,7 @@ const page = () => {
         <BlogContent
           title={"Todo List With Supabase"}
           href="https://todo-supabasev2.vercel.app/"
-          image={""}
-        />
-        <BlogContent
-          title={"Todo List With Supabase"}
-          href="https://todo-supabasev2.vercel.app/"
-          image={""}
-        />
-        <BlogContent
-          title={"Todo List With Supabase"}
-          href="https://todo-supabasev2.vercel.app/"
-          image={""}
-        />
-        <BlogContent
-          title={"Todo List With Supabase"}
-          href="https://todo-supabasev2.vercel.app/"
-          image={""}
+          image={"/img/todos.png"}
         />
       </div>
     </div>

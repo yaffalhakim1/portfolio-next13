@@ -4,7 +4,6 @@ import React from "react";
 
 interface BlogContentProps {
   title: string;
-
   image: string;
   href: string;
 }
@@ -24,7 +23,9 @@ const BlogContent = (props: BlogContentProps) => {
           {props.title}
         </Link>
         <div className="inline-flex gap-[32px] text-sm">
-          <span>{props.href}</span>
+          <Link href={props.href} className=" hover:text-zinc-600">
+            {props.href}
+          </Link>
         </div>
       </div>
     </div>
