@@ -6,7 +6,7 @@ import clsx from "clsx";
 export const metadata = {
   title: "Muhammad Yafi Alhakim",
   description:
-    "Hi there! I'm a final year student with a passion for web development. I have experience working with React JS and Next JS, and I'm always looking to learn more. I'm dedicated to creating clean, functional, and responsive web applications that provide an excellent user experience. When I'm not coding, I enjoy staying up-to-date with the latest trends in technology and spending time with my friends and family",
+    "Hi there! I&apos;m a final year student with a passion for web development. I have experience working with React JS and Next JS, and I'm always looking to learn more. I'm dedicated to creating clean, functional, and responsive web applications that provide an excellent user experience. When I'm not coding, I enjoy staying up-to-date with the latest trends in technology and spending time with my friends and family",
 };
 
 const source_Sans_Pro = Source_Sans_Pro({

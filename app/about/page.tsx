@@ -11,7 +11,7 @@ const page = () => {
     <div className="flex flex-col gap-6">
       <h1 className="font-bold text-[48px]">About Me</h1>
       <p>
-        I'm Yafi, a{" "}
+        I&apos;m Yafi, a{" "}
         <span className="font-bold">
           Final Year Computer Eng Student from Diponegoro University, Indonesia
         </span>
@@ -19,22 +19,23 @@ const page = () => {
       <div className="border my-4" />
       <p>
         Hello and welcome to my website! My name is Muhammad Yafi Alhakim, and
-        I'm a Front end Developer based in Semarang, Indonesia. I'm passionate
-        about good design and build things, and I love building for the web.
+        I&apos;m a Front end Developer based in Semarang, Indonesia. I&apos;m
+        passionate about good design and build things, and I love building for
+        the web.
       </p>
 
       <p>
         I believe that software engineering is not just about do the code but
         also understand what users need, and I strive to live my life in
-        accordance with those values. On this website, you'll find some writings
-        and things i have been build. I'm excited to share Next/ReactJS
-        knowledge with you.
+        accordance with those values. On this website, you&apos;ll find some
+        writings and things i have been build. I&apos;m excited to share
+        Next/ReactJS knowledge with you.
       </p>
 
       <p>
-        I'm always learning and growing, and I'm excited to see what the future
-        holds. Thank you for visiting my website. If you have any questions or
-        comments, please don't hesitate to contact me.
+        I&apos;m always learning and growing, and I&apos;m excited to see what
+        the future holds. Thank you for visiting my website. If you have any
+        questions or comments, please don&apos;t hesitate to contact me.
       </p>
       <div className="flex flex-col gap-2 md:flex-row md:gap-2">
         <a
