@@ -25,7 +25,7 @@ export default async function Bio() {
   }
 
   return (
-    <div className="inline-flex gap-[27px] justify-center items-center rounded-lg border border-zinc-100 w-[312px] h-[134px]">
+    <div className="inline-flex gap-[27px] justify-center items-center rounded-lg border border-zinc-500 w-[312px] h-[134px]">
       <Image
         alt="my-photo"
         src={"/img/photo.jpg"}

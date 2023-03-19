@@ -25,7 +25,7 @@ export default function RootLayout({
         <Providers>
           <div
             className={clsx(
-              "flex flex-col md:flex-row lg:w-[1000px] mx-4 lg:mx-auto lg:mt-[151px] mt-8 antialiased max-w-4xl mb-40 ",
+              "flex flex-col md:flex-row lg:w-[1000px] mx-4 lg:mx-auto lg:mt-[100px] mt-8 antialiased max-w-4xl mb-40",
               source_Sans_Pro.className
             )}
           >

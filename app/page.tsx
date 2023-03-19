@@ -4,17 +4,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-[36px]">
-      <h1 className="font-bold text-[48px]">Muhammad Yafi Alhakim</h1>
+    <div className="flex flex-col gap-[20px]">
+      <h1 className="font-bold text-[36px]">Yafi Alhakim</h1>
       <p>
         I&apos;m Yafi, a{" "}
         <span className="font-bold">
-          Final Year Computer Eng Student from Diponegoro University, Indonesia
+          Computer Engineering Student at Diponegoro University
         </span>
       </p>
       {/* @ts-expect-error Server Component */}
       <Bio />
-
       <p className="">
         Hi there! I&apos;m a final year student with a passion for web
         development. I have experience working with React JS, NextJS, Flutter
@@ -24,29 +23,29 @@ export default function Home() {
         up-to-date with the latest trends in technology and spending time with
         my friends and family.
       </p>
-      <div className="inline-flex gap-8 ">
+      <div className="flex flex-col gap-2 md:flex-row md:gap-2">
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://github.com/yaffalhakim1"
-          className="flex w-full border border-neutral-800 rounded-lg p-4 no-underline items-center text-black hover:dark:bg-neutral-900 hover:text-white hover:bg-neutral-100 transition-all justify-between"
+          href="https://drive.google.com/file/d/1JQ1ds8HQoCOlxcirSr3jZknvESDXuc_S/view"
+          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center text-black hover:dark:bg-neutral-900 hover:text-white hover:bg-neutral-100 transition-all justify-between"
         >
           <div className="flex items-center">
-            <div className="ml-3">GitHub</div>
+            <div className="ml-3">CV</div>
           </div>
           <ArrowIcon />
         </a>
-        <a
+        {/* <a
           rel="noopener noreferrer"
           target="_blank"
           href="https://bento.me/yafialhakim"
-          className="flex w-full border border-neutral-800 rounded-lg p-4 no-underline items-center text-black hover:dark:bg-neutral-900 hover:text-white hover:bg-neutral-100 transition-all justify-between"
+          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center text-black hover:dark:bg-neutral-900 hover:text-white hover:bg-neutral-100 transition-all justify-between"
         >
           <div className="flex items-center">
             <div className="ml-3">Bento</div>
           </div>
           <ArrowIcon />
-        </a>
+        </a> */}
       </div>
     </div>
   );

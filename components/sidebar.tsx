@@ -5,6 +5,8 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
+import { IconMoon, IconSun } from "./icons";
 
 interface Props {
   params?: any;
@@ -24,7 +26,7 @@ const Items = {
   },
   "/about": {
     name: "about",
-    x: 64,
+    x: 63,
     y: 35,
     w: "65px",
   },
@@ -47,6 +49,7 @@ export default function Sidebar() {
   if (pathname.includes("/blog/")) {
     pathname = "/blog";
   }
+  const { theme, setTheme } = useTheme();
 
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
@@ -56,9 +59,15 @@ export default function Sidebar() {
             alt="Logo"
             width={54}
             height={54}
-            className="mx-4 mb-4 rounded-full"
+            className=" rounded-full"
             src="/img/photo.jpg"
           />
+          <button
+            className="border-thin dark:hover:border-accent-200 dark:hover:text-accent-200 hover:border-accent-200 hover:text-accent-200 rounded-md p-2.5 focus:outline-none"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "light" ? <IconMoon size={20} /> : <IconSun size={20} />}
+          </button>
         </div>
         <nav
           className="flex overflow-hidden flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
