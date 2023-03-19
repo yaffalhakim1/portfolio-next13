@@ -2,11 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const BlogContent = () => {
+interface BlogContentProps {
+  title: string;
+
+  image: string;
+  href: string;
+}
+
+const BlogContent = (props: BlogContentProps) => {
   return (
     <div className="flex flex-row">
       <Image
-        src={"/img/default.png"}
+        src={props.image}
         width={200}
         height={200}
         className="rounded-lg w-[80px] h-[80px]"
@@ -14,11 +21,10 @@ const BlogContent = () => {
       />
       <div className="ml-[32px] flex flex-col justify-between">
         <Link href="/" className="text-lg font-bold hover:text-zinc-600">
-          Blog Title
+          {props.title}
         </Link>
         <div className="inline-flex gap-[32px] text-sm">
-          <span>2 Hari yang lalu</span>
-          <span>180x Dilihat</span>
+          <span>{props.href}</span>
         </div>
       </div>
     </div>

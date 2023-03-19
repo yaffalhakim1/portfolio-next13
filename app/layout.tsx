@@ -2,6 +2,7 @@ import Sidebar from "@/components/sidebar";
 import "./globals.css";
 import { Source_Sans_Pro } from "next/font/google";
 import clsx from "clsx";
+import { Providers } from "./providers";
 
 export const metadata = {
   title: "Muhammad Yafi Alhakim",
@@ -19,17 +20,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <div
-          className={clsx(
-            "flex flex-row lg:w-[1000px] mx-4 lg:mx-auto mt-[151px]",
-            source_Sans_Pro.className
-          )}
-        >
-          <Sidebar />
-          <main className="flex flex-grow w-full">{children}</main>
-        </div>
+        <Providers>
+          <div
+            className={clsx(
+              "flex flex-col md:flex-row lg:w-[1000px] mx-4 lg:mx-auto lg:mt-[151px] mt-8 antialiased max-w-4xl mb-40 ",
+              source_Sans_Pro.className
+            )}
+          >
+            <Sidebar />
+            <main className="flex flex-grow w-full">{children}</main>
+          </div>
+        </Providers>
       </body>
     </html>
   );
