@@ -6,8 +6,8 @@ const page = () => {
     <div>
       <h1 className="font-bold text-[36px]">Projects</h1>
       <p>
-        Here are some of my projects. I'm currently working on a few projects
-        that I can't wait to share with you.
+        Here are some of my projects. I&apos;m currently working on a few
+        projects that I can&apos;t wait to share with you.
       </p>
       <div className="flex flex-col gap-8 mt-8">
         {/* {[0, 1, 2, 3, 4, 5].map((item) => (
