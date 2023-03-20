@@ -9,7 +9,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-[20px]">
       <h1 className="font-bold text-[36px]">About Me</h1>
       <p>
         I&apos;m Yafi, a{" "}
@@ -48,7 +48,7 @@ const page = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.linkedin.com/in/yafialhakim/"
-          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:dark:bg-neutral-900 hover:text-black hover:dark:text-white hover:bg-neutral-100 transition-all justify-between"
+          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900 hover:dark:text-white transition-all justify-between"
         >
           <div className="flex items-center">
             <LinkedinIcon />
@@ -60,7 +60,7 @@ const page = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://github.com/yaffalhakim1"
-          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:dark:bg-neutral-900 hover:text-black hover:dark:text-white hover:bg-neutral-100 transition-all justify-between"
+          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white  hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
         >
           <div className="flex items-center">
             <GitHubIcon />
@@ -72,7 +72,7 @@ const page = () => {
           rel="noopener noreferrer"
           target="_blank"
           href=""
-          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:dark:bg-neutral-900 hover:text-black hover:dark:text-white hover:bg-neutral-100 transition-all justify-between"
+          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white  hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
         >
           <div className="flex items-center">
             <YoutubeIcon />

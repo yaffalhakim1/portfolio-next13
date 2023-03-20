@@ -14,7 +14,7 @@ export default function Home() {
       </p>
       {/* @ts-expect-error Server Component */}
       <Bio />
-      <p className="">
+      <p className="md:w-10/12">
         Hi there! I&apos;m a final year student with a passion for web
         development. I have experience working with React JS, NextJS, Flutter
         and I am always looking to learn more. I&apos;m dedicated to creating
@@ -28,24 +28,13 @@ export default function Home() {
           rel="noopener noreferrer"
           target="_blank"
           href="https://drive.google.com/file/d/1JQ1ds8HQoCOlxcirSr3jZknvESDXuc_S/view"
-          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:dark:bg-neutral-900 hover:text-black hover:dark:text-white hover:bg-neutral-100 transition-all justify-between"
+          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
         >
           <div className="flex items-center">
             <div className="ml-3">CV</div>
           </div>
           <ArrowIcon />
         </a>
-        {/* <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://bento.me/yafialhakim"
-          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center text-black hover:dark:bg-neutral-900 hover:text-white hover:bg-neutral-100 transition-all justify-between"
-        >
-          <div className="flex items-center">
-            <div className="ml-3">Bento</div>
-          </div>
-          <ArrowIcon />
-        </a> */}
       </div>
     </div>
   );

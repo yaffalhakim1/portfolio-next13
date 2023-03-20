@@ -84,7 +84,7 @@ export default function Sidebar() {
               <>
                 <div className="hidden md:block">
                   <motion.div
-                    className="absolute bg-neutral-100 h-[34px] rounded-md z-[-1]"
+                    className="absolute bg-neutral-800 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]"
                     layoutId="test2"
                     initial={{ opacity: 0, y: Items[pathname].y }}
                     animate={{
@@ -101,7 +101,7 @@ export default function Sidebar() {
                 </div>
                 <div className="block md:hidden">
                   <motion.div
-                    className="absolute bg-neutral-100  h-[34px] rounded-md z-[-1]"
+                    className="absolute bg-neutral-800 dark:bg-neutral-800  h-[34px] rounded-md z-[-1]"
                     layoutId="test"
                     initial={{ opacity: 0, x: Items[pathname].x }}
                     animate={{
@@ -118,7 +118,6 @@ export default function Sidebar() {
                 </div>
               </>
             ) : null}
-
             {Object.entries(Items).map(([path, { name }]) => {
               const isActive = path === pathname;
               return (
@@ -126,10 +125,10 @@ export default function Sidebar() {
                   key={path}
                   href={path}
                   className={clsx(
-                    "transition-all hover:text-neutral-800 dark:text-neutral-800  text-black py-[5px] px-[10px]",
+                    "transition-all hover:text-neutral-800 text-black dark:text-white py-[5px] px-[10px]",
                     {
                       "text-neutral-500": !isActive,
-                      "font-bold": isActive,
+                      "font-bold text-white": isActive,
                     }
                   )}
                 >
