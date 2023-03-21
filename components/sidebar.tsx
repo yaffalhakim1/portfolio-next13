@@ -36,12 +36,12 @@ const Items = {
     y: 69,
     w: "90px",
   },
-  // "/guestbook": {
-  //   name: "guestbook",
-  //   x: 182,
-  //   y: 104,
-  //   w: "100px",
-  // },
+  "/blog": {
+    name: "blog",
+    x: 217,
+    y: 101,
+    w: "60px",
+  },
 };
 
 export default function Sidebar() {
