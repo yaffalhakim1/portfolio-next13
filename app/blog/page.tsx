@@ -26,11 +26,11 @@ const page = () => {
         ))} */}
         <Writing
           title={"Toast with Sonner"}
-          href="https://yafialhakimblog.vercel.app/sonner"
+          href="https://yafialhakimblog.vercel.app/library/sonner"
         />
         <Writing
           title={"Implementing PWA in NextJS"}
-          href="https://yafialhakimblog.vercel.app/pwa"
+          href="https://yafialhakimblog.vercel.app/library/pwa"
         />
       </div>
     </div>
