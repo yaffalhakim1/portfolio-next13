@@ -9,7 +9,7 @@ const page = () => {
         Here are some of my projects. I&apos;m currently working on a few
         projects that I can&apos;t wait to share with you.
       </p>
-      <div className="flex flex-col gap-8 mt-8">
+      <div className="flex flex-col gap-4 mt-4">
         {/* {[0, 1, 2, 3, 4, 5].map((item) => (
           <BlogContent key={item} />
         ))} */}
@@ -28,6 +28,20 @@ const page = () => {
           }
           href="https://next-movies-ruby.vercel.app/"
           image={"/img/movies.png"}
+        />
+        <BlogContent
+          title={"Slicing Design With Tailwind CSS"}
+          desc={"Practicing slicing a design using Tailwind CSS."}
+          href="https://slicing-next1.vercel.app/"
+          image={"/img/slicing1.png"}
+        />
+        <BlogContent
+          title={"Slicing Design With Tailwind CSS from CodeDesign.dev"}
+          desc={
+            "Slicing from design to web using NextJS and TailwindCSS. Not perfectly responsive and still need to manage the image."
+          }
+          href="https://slicing-all.vercel.app/"
+          image={"/img/codesign.png"}
         />
       </div>
     </div>

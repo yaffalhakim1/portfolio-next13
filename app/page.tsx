@@ -1,5 +1,6 @@
 import Bio from "@/components/bio";
 import { ArrowIcon, GitHubIcon } from "@/components/icons";
+import Spotify from "@/components/spotify";
 import Link from "next/link";
 
 export default function Home() {

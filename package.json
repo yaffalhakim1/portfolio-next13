@@ -13,6 +13,7 @@
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "axios": "^1.3.4",
     "clsx": "^1.2.1",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
@@ -20,8 +21,11 @@
     "next": "13.2.4",
     "next-auth": "^4.20.1",
     "next-themes": "latest",
+    "querystring": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "swr": "^2.1.0",
     "typescript": "4.9.4"
   },
   "devDependencies": {
