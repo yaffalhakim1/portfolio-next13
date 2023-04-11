@@ -30,16 +30,22 @@ const Items = {
     y: 35,
     w: "65px",
   },
-  "/projects": {
-    name: "projects",
+  "/experience": {
+    name: "experience",
     x: 127,
     y: 69,
+    w: "110px",
+  },
+  "/projects": {
+    name: "projects",
+    x: 127 + 63,
+    y: 69 + 34,
     w: "90px",
   },
   "/blog": {
     name: "blog",
-    x: 217,
-    y: 101,
+    x: 217 + 63,
+    y: 101 + 34,
     w: "60px",
   },
 };
