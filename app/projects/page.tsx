@@ -14,32 +14,26 @@ const page = () => {
           <BlogContent key={item} />
         ))} */}
         <BlogContent
-          title={"Todo List With Supabase"}
-          desc={
-            "This is a todo list that I made using Supabase. required login to access the todo list."
-          }
+          title={"Todo List"}
+          desc={"This is a todo list that I made using Supabase."}
           href="https://todo-supabasev2.vercel.app/"
           image={"/img/todos.png"}
         />
         <BlogContent
-          title={"Movie App With NextJS and generateStaticParams"}
-          desc={
-            "This is a movie app that I made using NextJS and generateStaticParams. I use the API from themoviedb.org and this web is zero loading."
-          }
+          title={"Moviez"}
+          desc={"An example of generateStaticParams (nextjs)."}
           href="https://next-movies-ruby.vercel.app/"
           image={"/img/movies.png"}
         />
         <BlogContent
-          title={"Slicing Design With Tailwind CSS"}
+          title={"Blog Design"}
           desc={"Practicing slicing a design using Tailwind CSS."}
           href="https://slicing-next1.vercel.app/"
           image={"/img/slicing1.png"}
         />
         <BlogContent
-          title={"Slicing Design With Tailwind CSS from CodeDesign.dev"}
-          desc={
-            "Slicing from design to web using NextJS and TailwindCSS. Not perfectly responsive and still need to manage the image."
-          }
+          title={"CodeDesign"}
+          desc={"Slicing from design to web from codedesign.dev."}
           href="https://slicing-all.vercel.app/"
           image={"/img/codesign.png"}
         />

@@ -36,18 +36,16 @@ export default function ExperiencePage() {
         </h3>
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
           In this project, I work with 1 Backend Engineer, 2 UI/UX Designer, and
-          1 Project Manager engineer to create an app using Flutter. The app
-          function is to find tailor nearby.
+          1 Project Manager to create an app using Flutter. The app function is
+          to find tailor nearby.
           <ul className=" space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400 mt-4 leading-relaxed">
             <li>
               Designing UI (mobile app) for some screen and discussed it with
               Product Manager
             </li>
-            <li>
-              Developing an Application using Flutter. Slicing from design to a
-              reusable, clean code and build features such as making an
-              appointment, connect to REST APIs, with Provider as State Manager.
-            </li>
+            <li>Slicing from design to a reusable</li>
+            <li>clean code and build features such as making an appointment</li>
+            <li>connect to REST APIs with Provider as State Manager</li>
           </ul>
         </p>
       </div>

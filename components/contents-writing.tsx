@@ -4,6 +4,7 @@ import { ArrowIcon } from "./icons";
 interface ItemProps {
   href?: string;
   title?: string;
+  desc?: string;
 }
 
 export default function Writing(props: ItemProps) {
@@ -15,8 +16,9 @@ export default function Writing(props: ItemProps) {
         href={props.href}
         className="flex w-full border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
       >
-        <div className="flex items-center">
-          <div className="ml-3">{props.title}</div>
+        <div className=" items-center">
+          <div className="ml-3 text-lg font-bold">{props.title}</div>
+          <div className="ml-3 text-sm mt-2 font-extralight">{props.desc}</div>
         </div>
         <ArrowIcon />
       </a>

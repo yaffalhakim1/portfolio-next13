@@ -46,10 +46,12 @@ export default function Home() {
         <Writing
           title={"Toast with Sonner"}
           href="https://yafialhakimblog.vercel.app/library/sonner"
+          desc="Sonner is a simple toast library for NextJS"
         />
         <Writing
           title={"Implementing PWA in NextJS"}
           href="https://yafialhakimblog.vercel.app/library/pwa"
+          desc="PWA is a web application that can be installed on the user's device."
         />
       </div>
     </div>
