@@ -1,39 +1,56 @@
 import Bio from "@/components/bio";
+import Projects from "@/components/projects-card";
 import { ArrowIcon, GitHubIcon } from "@/components/icons";
+import Writing from "@/components/contents-writing";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-[20px]">
       <h1 className="font-bold text-[36px]">Yafi Alhakim</h1>
-      <p>
+      {/* <p>
         I&apos;m Yafi, a{" "}
         <span className="font-bold">
           Computer Engineering Student at Diponegoro University
         </span>
-      </p>
-      {/* @ts-expect-error Server Component */}
-      <Bio />
-      <p className="md:w-10/12">
+      </p> */}
+
+      <p className="md:w-10/12 leading-relaxed">
         Hi there! I&apos;m a final year student with a passion for web
-        development. I have experience working with React JS, NextJS, Flutter
-        and I am always looking to learn more. I&apos;m dedicated to creating
-        clean, functional, and responsive web applications that provide an
-        excellent user experience. When I&apos;m not coding, I enjoy staying
-        up-to-date with the latest trends in technology and spending time with
-        my friends and family.
+        development. I currently work as a freelance web developer and I&apos;m
+        looking for a full-time job.
       </p>
-      <div className="flex flex-col gap-2 md:flex-row md:gap-2">
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://drive.google.com/file/d/1JQ1ds8HQoCOlxcirSr3jZknvESDXuc_S/view"
-          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
-        >
-          <div className="flex items-center">
-            <div className="ml-3">CV</div>
-          </div>
-          <ArrowIcon />
-        </a>
+      <h2 className="mt-10">
+        <span className="font-bold text-2xl">Featured Project</span>
+      </h2>
+      <div className="md:flex space-x-4">
+        <Projects
+          title={"Moviez"}
+          desc={
+            "This is a movie app that I made using NextJS and generateStaticParams."
+          }
+          image={"/img/movies.png"}
+          href="https://next-movies-ruby.vercel.app/"
+        />
+        <Projects
+          title={"CodeDesign"}
+          desc={"Slicing from design to web using NextJS and TailwindCSS."}
+          image={"/img/codesign.png"}
+          href="https://slicing-all.vercel.app/"
+        />
+      </div>
+
+      <h2 className="mt-5">
+        <span className="font-bold text-2xl">Recent Post</span>
+      </h2>
+      <div className="flex flex-col gap-4">
+        <Writing
+          title={"Toast with Sonner"}
+          href="https://yafialhakimblog.vercel.app/library/sonner"
+        />
+        <Writing
+          title={"Implementing PWA in NextJS"}
+          href="https://yafialhakimblog.vercel.app/library/pwa"
+        />
       </div>
     </div>
   );

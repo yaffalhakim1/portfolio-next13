@@ -64,14 +64,14 @@ export default function Sidebar() {
   if (!isMounted) return null;
 
   return (
-    <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
+    <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0">
       <div className="lg:sticky lg:top-20">
-        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ">
+        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-4 space-y-10 flex flex-col md:flex-row items-start ">
           <Image
             alt="Logo"
             width={54}
             height={54}
-            className=" rounded-full"
+            className="rounded-full"
             src="/img/photo.jpg"
           />
           <button
@@ -107,7 +107,7 @@ export default function Sidebar() {
                 </div>
                 <div className="block md:hidden">
                   <motion.div
-                    className="absolute bg-neutral-800 dark:bg-neutral-800  h-[34px] rounded-md z-[-1]"
+                    className="absolute bg-neutral-800 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]"
                     layoutId="test"
                     initial={{ opacity: 0, x: Items[pathname].x }}
                     animate={{

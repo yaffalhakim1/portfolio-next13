@@ -1,15 +1,15 @@
-import BlogContent from "@/components/contents-blog";
+import BlogContent from "@/components/projects-card";
 import React from "react";
 
 const page = () => {
   return (
     <div>
       <h1 className="font-bold text-[36px]">Projects</h1>
-      <p>
+      <p className="mt-3">
         Here are some of my projects. I&apos;m currently working on a few
         projects that I can&apos;t wait to share with you.
       </p>
-      <div className="flex flex-col gap-4 mt-4">
+      <div className="grid grid-cols-2 gap-4 mt-5">
         {/* {[0, 1, 2, 3, 4, 5].map((item) => (
           <BlogContent key={item} />
         ))} */}

@@ -7,6 +7,9 @@ const nextConfig = {
       { loader: "next/font/google", options: { subsets: ["latin"] } },
     ],
   },
+  // images: {
+  //   unoptimized: true,
+  // },
 };
 
 module.exports = nextConfig;

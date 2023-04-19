@@ -7,9 +7,7 @@ const page = () => {
     <div>
       <h1 className="font-bold text-[36px]">Writings</h1>
       <p>
-        Here are some of my writings. I&apos;m currently working on a few
-        writings that I hope you can enjoy. All of my writings are available on
-        my{" "}
+        Here are some of my writings. All of my writings are available on my{" "}
         <span>
           <a
             href="https://yafialhakimblog.vercel.app/"

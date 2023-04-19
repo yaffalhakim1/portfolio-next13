@@ -71,12 +71,11 @@ const page = () => {
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href=""
-          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white  hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
+          href="https://drive.google.com/file/d/1JQ1ds8HQoCOlxcirSr3jZknvESDXuc_S/view"
+          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
         >
           <div className="flex items-center">
-            <YoutubeIcon />
-            <div className="ml-3">YouTube</div>
+            <div className="ml-3">CV</div>
           </div>
           <ArrowIcon />
         </a>
