@@ -1,9 +1,8 @@
-import IconDocuments, {
+import {
   ArrowIcon,
   GitHubIcon,
   LinkedinIcon,
-  TwitterIcon,
-  YoutubeIcon,
+  EmailIcon,
 } from "@/components/icons";
 import React from "react";
 
@@ -71,12 +70,12 @@ const page = () => {
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://drive.google.com/file/d/1JQ1ds8HQoCOlxcirSr3jZknvESDXuc_S/view"
+          href="mailto:yafialhakim64@email.com"
           className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
         >
           <div className="flex items-center">
-            <IconDocuments />
-            <div className="ml-3">CV</div>
+            <EmailIcon />
+            <div className="ml-3">Email</div>
           </div>
           <ArrowIcon />
         </a>

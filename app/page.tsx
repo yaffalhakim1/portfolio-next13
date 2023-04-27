@@ -1,6 +1,6 @@
 import Bio from "@/components/bio";
 import Projects from "@/components/projects-card";
-import IconDocuments, { ArrowIcon, GitHubIcon } from "@/components/icons";
+import { ArrowIcon, IconDocuments } from "@/components/icons";
 import Writing from "@/components/contents-writing";
 
 export default function Home() {
@@ -31,9 +31,7 @@ export default function Home() {
       <div className="md:flex space-x-4">
         <Projects
           title={"Moviez"}
-          desc={
-            "This is a movie app that I made using NextJS and generateStaticParams."
-          }
+          desc={"Data fetching with generateStaticParams"}
           image={"/img/movies.png"}
           href="https://next-movies-ruby.vercel.app/"
         />
