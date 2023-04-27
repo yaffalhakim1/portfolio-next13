@@ -7,7 +7,7 @@ import { Providers } from "./providers";
 export const metadata = {
   title: "Muhammad Yafi Alhakim",
   description:
-    "Hi there! I&apos;m a final year student with a passion for web development. I have experience working with React JS and Next JS, and I'm always looking to learn more. I'm dedicated to creating clean, functional, and responsive web applications that provide an excellent user experience. When I'm not coding, I enjoy staying up-to-date with the latest trends in technology and spending time with my friends and family",
+    "Hi there! I&apos;m a final year student with a passion for web development",
 };
 
 const jakarta = Plus_Jakarta_Sans({
