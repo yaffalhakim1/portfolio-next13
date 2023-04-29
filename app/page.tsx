@@ -68,7 +68,7 @@ export default function Home() {
             "My First Open-Source Contribution: Translating ReactJS Pages to Indonesian Language"
           }
           href="https://yafialhakimblog.vercel.app/story/pr"
-          desc="PWA is a web application that can be installed on the user's device."
+          desc="Contributing to open source is a great way to improve your skills and learn new things."
         />
       </div>
     </div>
