@@ -20,7 +20,6 @@ export default function Writing(props: ItemProps) {
           <div className="ml-3 text-lg font-bold">{props.title}</div>
           <div className="ml-3 text-sm mt-2 font-extralight">{props.desc}</div>
         </div>
-        <ArrowIcon />
       </a>
     </div>
   );
