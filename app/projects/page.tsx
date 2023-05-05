@@ -37,6 +37,12 @@ const page = () => {
           href="https://slicing-all.vercel.app/"
           image={"/img/codesign.png"}
         />
+        <BlogContent
+          title={"Pokeredux"}
+          desc={"Data fetching with redux toolkit."}
+          image={"/img/pokredux.png"}
+          href="https://pokredux.vercel.app/"
+        />
       </div>
     </div>
   );
