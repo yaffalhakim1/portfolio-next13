@@ -45,14 +45,30 @@ export default function RootLayout({
               {showPage ? (
                 <div
                   className={`flex flex-col items-center justify-center w-full h-full fixed top-0 left-0 z-50 ${
-                    showPage ? "opacity-100" : "opacity-0"
-                  } transition-opacity duration-300`}
+                    showPage
+                      ? "opacity-100 transition-opacity duration-1000"
+                      : "opacity-0"
+                  }`}
                 >
                   <div className="flex flex-col items-center justify-center">
-                    <p className="text-2xl font-bold">
+                    <p
+                      className={`text-2xl font-bold ${
+                        showPage
+                          ? "opacity-100 transition-opacity duration-1000"
+                          : "opacity-0"
+                      }`}
+                    >
                       Hire him he is so good with react things!
                     </p>
-                    <p className="text-md mt-4">- some friends</p>
+                    <p
+                      className={`text-md mt-4 ${
+                        showPage
+                          ? "opacity-100 transition-opacity duration-1000"
+                          : "opacity-0"
+                      }`}
+                    >
+                      - some friends
+                    </p>
                   </div>
                 </div>
               ) : (
