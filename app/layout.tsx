@@ -7,11 +7,11 @@ import { Providers } from "./providers";
 import { useEffect, useState } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
-export const metadata = {
-  title: "Muhammad Yafi Alhakim",
-  description:
-    "Hi there! I&apos;m a final year student with a passion for web development",
-};
+// export const metadata = {
+//   title: "Muhammad Yafi Alhakim",
+//   description:
+//     "Hi there! I&apos;m a final year student with a passion for web development",
+// };
 
 const jakarta = Plus_Jakarta_Sans({
   weight: ["400", "700"],
