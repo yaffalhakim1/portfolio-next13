@@ -18,7 +18,7 @@
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "framer-motion": "^10.6.0",
-    "next": "13.4.0",
+    "next": "13.4.1",
     "next-auth": "^4.20.1",
     "next-themes": "latest",
     "querystring": "^0.2.1",
