@@ -77,7 +77,7 @@ export default function RootLayout({
                 jakarta.className
               )}
             >
-              <Sidebar />
+              <Sidebar className="z-50" />
               <main>{children}</main>
             </div>
           </Providers>
