@@ -1,9 +1,7 @@
 import Sidebar from "@/components/sidebar";
-import { motion } from "framer-motion";
 import "./globals.css";
 import clsx from "clsx";
 import { Providers } from "./providers";
-import { useEffect, useState } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { Metadata } from "next";
 
@@ -22,15 +20,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [showPage, setShowPage] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPage(false);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
       <html lang="en" suppressHydrationWarning>
