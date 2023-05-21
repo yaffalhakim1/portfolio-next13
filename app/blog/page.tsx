@@ -23,6 +23,13 @@ const page = () => {
           <BlogContent key={item} />
         ))} */}
         <Writing
+          title={
+            "My First Open-Source Contribution: Translating ReactJS Pages to Indonesian Language"
+          }
+          href="https://yafialhakimblog.vercel.app/story/pr"
+          desc="PWA is a web application that can be installed on the user's device."
+        />
+        <Writing
           title={"Toast with Sonner"}
           href="https://yafialhakimblog.vercel.app/library/sonner"
           desc="Sonner is a simple toast library for NextJS"
@@ -30,13 +37,6 @@ const page = () => {
         <Writing
           title={"Implementing PWA in NextJS"}
           href="https://yafialhakimblog.vercel.app/library/pwa"
-          desc="PWA is a web application that can be installed on the user's device."
-        />
-        <Writing
-          title={
-            "My First Open-Source Contribution: Translating ReactJS Pages to Indonesian Language"
-          }
-          href="https://yafialhakimblog.vercel.app/story/pr"
           desc="PWA is a web application that can be installed on the user's device."
         />
       </div>

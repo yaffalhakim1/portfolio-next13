@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import Link from "next/link";
+
 import React from "react";
-import { ArrowIcon } from "./icons";
+import Badge from "./Badge";
 
 interface ProjectProps {
   title: string;
   desc: string;
   image: string;
   href: string;
+  stack?: React.ReactNode;
 }
 
 const Projects = (props: ProjectProps) => {
@@ -30,6 +30,9 @@ const Projects = (props: ProjectProps) => {
               </div>
 
               <p className="text-sm text-neutral-500">{props.desc}</p>
+
+              {props.stack && <div>{props.stack}</div>}
+              {/* <Badge techstack={props.stack} /> */}
             </div>
           </div>{" "}
         </div>

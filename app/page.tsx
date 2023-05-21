@@ -1,6 +1,13 @@
 import Projects from "@/components/projects-card";
-import { ArrowIcon, IconDocuments } from "@/components/icons";
+import {
+  ArrowIcon,
+  IconDocuments,
+  IconNextjs,
+  IconSupabase,
+  IconTailwind,
+} from "@/components/icons";
 import Writing from "@/components/contents-writing";
+import Badge from "@/components/Badge";
 
 export default function Home() {
   return (
@@ -16,7 +23,7 @@ export default function Home() {
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://drive.google.com/file/d/1yxzCljYO5DP__ztac2qP-QR0GpHZUUNZ/view?usp=share_link"
+          href="https://drive.google.com/file/d/1VUE6u6Z3Bi4gQvJHJcH3l9RI5ZTZbc6D/view?usp=share_link"
           className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
         >
           <div className="flex items-center">
@@ -34,24 +41,44 @@ export default function Home() {
             desc={"Data fetching with generateStaticParams"}
             image={"/img/movies.png"}
             href="https://next-movies-ruby.vercel.app/"
+            stack={
+              <Badge
+                // techstack="NextJS"
+                logo1={<IconNextjs className="mr-1" />}
+              />
+            }
           />
           <Projects
             title={"CodeDesign"}
-            desc={"Slicing from design to web using NextJS and TailwindCSS."}
+            desc={"Slicing from design to web using TailwindCSS."}
             image={"/img/codesign.png"}
             href="https://slicing-all.vercel.app/"
+            stack={
+              <Badge
+                // techstack="NextJS, TailwindCSS"
+                logo1={<IconNextjs className="mr-1" />}
+                logo2={<IconTailwind className="mr-1" />}
+              />
+            }
           />
           <Projects
             title={"Todo List"}
             desc={"Todo app using Supabase and NextJS."}
             image={"/img/todos.png"}
             href="https://todo-supabasev2.vercel.app/"
+            stack={
+              <Badge
+                logo1={<IconNextjs className="mr-1" />}
+                logo2={<IconSupabase className="mr-1" />}
+              />
+            }
           />
           <Projects
             title={"Pokeredux"}
             desc={"Data fetching with redux toolkit."}
             image={"/img/pokredux.png"}
             href="https://pokredux.vercel.app/"
+            stack={<Badge logo1={<IconNextjs className="mr-1" />} />}
           />
         </div>
 
