@@ -37,10 +37,10 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <Projects
-            title={"Moviez"}
-            desc={"Data fetching with generateStaticParams"}
-            image={"/img/movies.png"}
-            href="https://next-movies-ruby.vercel.app/"
+            title={"Simple E-commerce"}
+            desc={"Simple e-commerce using NextJS and RSC."}
+            image={"/img/ecommerce.png"}
+            href="https://simple-ecommerce-appdir.vercel.app/"
             stack={
               <Badge
                 // techstack="NextJS"

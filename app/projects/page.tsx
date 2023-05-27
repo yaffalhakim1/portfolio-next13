@@ -14,6 +14,18 @@ const page = () => {
           <BlogContent key={item} />
         ))} */}
         <BlogContent
+          title={"Simple E-commerce"}
+          desc={"Simple e-commerce using NextJS and RSC"}
+          image={"/img/ecommerce.png"}
+          href="https://simple-ecommerce-appdir.vercel.app/"
+        />
+        <BlogContent
+          title={"Pokeredux"}
+          desc={"Data fetching with redux toolkit."}
+          image={"/img/pokredux.png"}
+          href="https://pokredux.vercel.app/"
+        />
+        <BlogContent
           title={"Todo List"}
           desc={"This is a todo list that I made using Supabase."}
           href="https://todo-supabasev2.vercel.app/"
@@ -36,12 +48,6 @@ const page = () => {
           desc={"Slicing from design to web from codedesign.dev."}
           href="https://slicing-all.vercel.app/"
           image={"/img/codesign.png"}
-        />
-        <BlogContent
-          title={"Pokeredux"}
-          desc={"Data fetching with redux toolkit."}
-          image={"/img/pokredux.png"}
-          href="https://pokredux.vercel.app/"
         />
       </div>
     </div>
