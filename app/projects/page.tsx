@@ -14,6 +14,12 @@ const page = () => {
           <BlogContent key={item} />
         ))} */}
         <BlogContent
+          title={"Movies"}
+          desc={"Simple movies web using NextJS"}
+          image={"/img/movies.png"}
+          href="https://movies-13.vercel.app/"
+        />
+        <BlogContent
           title={"Simple E-commerce"}
           desc={"Simple e-commerce using NextJS and RSC"}
           image={"/img/ecommerce.png"}
@@ -31,12 +37,7 @@ const page = () => {
           href="https://todo-supabasev2.vercel.app/"
           image={"/img/todos.png"}
         />
-        <BlogContent
-          title={"Moviez"}
-          desc={"An example of generateStaticParams (nextjs)."}
-          href="https://next-movies-ruby.vercel.app/"
-          image={"/img/movies.png"}
-        />
+
         <BlogContent
           title={"Blog Design"}
           desc={"Practicing slicing a design using Tailwind CSS."}

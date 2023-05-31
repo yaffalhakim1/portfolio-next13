@@ -37,6 +37,18 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <Projects
+            title={"Movies"}
+            desc={"Simple movies web using NextJS"}
+            image={"/img/movies.png"}
+            href="https://movies-13.vercel.app/"
+            stack={
+              <Badge
+                // techstack="NextJS"
+                logo1={<IconNextjs className="mr-1" />}
+              />
+            }
+          />
+          <Projects
             title={"Simple E-commerce"}
             desc={"Simple e-commerce using NextJS and RSC."}
             image={"/img/ecommerce.png"}
