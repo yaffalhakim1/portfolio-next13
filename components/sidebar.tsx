@@ -38,13 +38,13 @@ const Items = {
   },
   "/projects": {
     name: "projects",
-    x: 127 + 63,
+    x: 127 + 107,
     y: 69 + 34,
     w: "90px",
   },
   "/blog": {
     name: "blog",
-    x: 217 + 63,
+    x: 217 + 100,
     y: 101 + 34,
     w: "60px",
   },
@@ -70,7 +70,7 @@ export default function Sidebar({ className }: sideBar) {
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 z-50">
       <div className="lg:sticky lg:top-20">
-        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-4 space-y-10 flex flex-col md:flex-row items-start ">
+        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-4 space-y-10 flex flex-row md:flex-row items-start ">
           <Image
             alt="Logo"
             width={54}
@@ -135,7 +135,7 @@ export default function Sidebar({ className }: sideBar) {
                   key={path}
                   href={path}
                   className={clsx(
-                    "transition-all hover:text-neutral-800 text-black dark:text-white py-[5px] px-[10px]",
+                    "transition-all  text-black dark:text-white py-[5px] px-[10px]",
                     {
                       "text-neutral-500": !isActive,
                       "font-bold text-white": isActive,

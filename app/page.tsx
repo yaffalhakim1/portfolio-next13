@@ -35,7 +35,7 @@ export default function Home() {
         <h2 className="mt-10">
           <span className="font-bold text-2xl">Featured Project</span>
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-2">
           <Projects
             title={"Movies"}
             desc={"Simple movies web using NextJS"}

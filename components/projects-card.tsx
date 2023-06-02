@@ -15,7 +15,7 @@ const Projects = (props: ProjectProps) => {
   return (
     <>
       <a href={props.href}>
-        <div className="flex w-full border border-neutral-800 rounded-lg  no-underline items-center  hover:bg-neutral-900 hover:text-white  hover:dark:bg-neutral-900  hover:dark:text-white transition-all">
+        <div className="flex w-full border border-neutral-800 rounded-lg items-stretch  no-underline   hover:bg-neutral-900 hover:text-white  hover:dark:bg-neutral-900  hover:dark:text-white transition-all">
           <div className="">
             <img
               src={props.image}
@@ -29,10 +29,9 @@ const Projects = (props: ProjectProps) => {
                 {props.title}
               </div>
 
-              <p className="text-sm text-neutral-500">{props.desc}</p>
+              <p className="text-sm text-neutral-500 flex-grow">{props.desc}</p>
 
               {props.stack && <div>{props.stack}</div>}
-              {/* <Badge techstack={props.stack} /> */}
             </div>
           </div>{" "}
         </div>
