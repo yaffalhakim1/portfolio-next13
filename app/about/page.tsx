@@ -16,19 +16,19 @@ const page = () => {
           Computer Engineering Student at Diponegoro University
         </span>
       </p>
-      <p className="md:w-9/12">
+      <p className="md:w-9/12 text-justify">
         I already have experience building web app and now currently i focused
         on pursuit my career as a Front End Developer.
       </p>
       <div className="border my-4" />
-      <p className="md:w-9/12">
+      <p className="md:w-9/12 text-justify">
         Hello and welcome to my website! My name is Muhammad Yafi Alhakim, and
         I&apos;m a Front end Developer based in Semarang, Indonesia. I&apos;m
         passionate about good design and build things, and I love building for
         the web.
       </p>
 
-      <p className="md:w-9/12">
+      <p className="md:w-9/12 text-justify">
         I believe that software engineering is not just about do the code but
         also understand what users need, and I strive to live my life in
         accordance with those values. On this website, you&apos;ll find some
@@ -36,7 +36,7 @@ const page = () => {
         Next/ReactJS knowledge with you.
       </p>
 
-      <p className="md:w-9/12">
+      <p className="md:w-9/12 text-justify">
         I&apos;m always learning and growing, and I&apos;m excited to see what
         the future holds. Thank you for visiting my website. If you have any
         questions or comments, please don&apos;t hesitate to contact me.

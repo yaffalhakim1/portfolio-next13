@@ -1,6 +1,7 @@
 import Projects from "@/components/projects-card";
 import {
   ArrowIcon,
+  EmailIcon,
   IconDocuments,
   IconNextjs,
   IconSupabase,
@@ -20,18 +21,33 @@ export default function Home() {
           development. I currently work as a freelance web developer and
           I&apos;m looking for a full-time job.
         </p>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://drive.google.com/file/d/1VUE6u6Z3Bi4gQvJHJcH3l9RI5ZTZbc6D/view?usp=share_link"
-          className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
-        >
-          <div className="flex items-center">
-            <IconDocuments />
-            <div className="ml-3">CV</div>
-          </div>
-          <ArrowIcon />
-        </a>
+        <div className="flex space-x-2">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://drive.google.com/file/d/1VUE6u6Z3Bi4gQvJHJcH3l9RI5ZTZbc6D/view?usp=share_link"
+            className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
+          >
+            <div className="flex items-center">
+              <IconDocuments />
+              <div className="ml-3">CV</div>
+            </div>
+            <ArrowIcon />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="mailto:yafialhakim64@email.com"
+            className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
+          >
+            <div className="flex items-center">
+              <EmailIcon />
+              <div className="ml-3">Email</div>
+            </div>
+            <ArrowIcon />
+          </a>
+        </div>
+
         <h2 className="mt-10">
           <span className="font-bold text-2xl">Featured Project</span>
         </h2>
@@ -50,7 +66,7 @@ export default function Home() {
           />
           <Projects
             title={"Simple E-commerce"}
-            desc={"Simple e-commerce using NextJS and RSC."}
+            desc={"Simple e-commerce using NextJS appDir"}
             image={"/img/ecommerce.png"}
             href="https://simple-ecommerce-appdir.vercel.app/"
             stack={
