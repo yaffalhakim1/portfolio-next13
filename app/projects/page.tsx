@@ -14,6 +14,12 @@ const page = () => {
           <BlogContent key={item} />
         ))} */}
         <BlogContent
+          title={"Anonymous Message"}
+          desc={"Send anonymous message to you"}
+          image={"/img/anonym.png"}
+          href="https://anonymous-website-message.vercel.app/"
+        />
+        <BlogContent
           title={"Movies"}
           desc={"Simple movies web using NextJS"}
           image={"/img/movies.png"}

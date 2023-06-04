@@ -53,6 +53,23 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-2 gap-2">
           <Projects
+            title={"Anonymous Message"}
+            desc={"Send anonymous message to you."}
+            image={"/img/anonym.png"}
+            href="https://anonymous-website-message.vercel.app/"
+            stack={
+              <Badge
+                // techstack="NextJS"
+                logo1={
+                  <IconNextjs width="16px" height="16px" className="mr-1" />
+                }
+                logo2={
+                  <IconSupabase width="16px" height="16px" className="mr-1" />
+                }
+              />
+            }
+          />
+          <Projects
             title={"Movies"}
             desc={"Simple movies web using NextJS"}
             image={"/img/movies.png"}
@@ -60,7 +77,9 @@ export default function Home() {
             stack={
               <Badge
                 // techstack="NextJS"
-                logo1={<IconNextjs className="mr-1" />}
+                logo1={
+                  <IconNextjs width="16px" height="16px" className="mr-1" />
+                }
               />
             }
           />
@@ -72,7 +91,9 @@ export default function Home() {
             stack={
               <Badge
                 // techstack="NextJS"
-                logo1={<IconNextjs className="mr-1" />}
+                logo1={
+                  <IconNextjs width="16px" height="16px" className="mr-1" />
+                }
               />
             }
           />
@@ -84,8 +105,12 @@ export default function Home() {
             stack={
               <Badge
                 // techstack="NextJS, TailwindCSS"
-                logo1={<IconNextjs className="mr-1" />}
-                logo2={<IconTailwind className="mr-1" />}
+                logo1={
+                  <IconNextjs width="16px" height="16px" className="mr-1" />
+                }
+                logo2={
+                  <IconTailwind width="16px" height="16px" className="mr-1" />
+                }
               />
             }
           />
@@ -96,8 +121,12 @@ export default function Home() {
             href="https://todo-supabasev2.vercel.app/"
             stack={
               <Badge
-                logo1={<IconNextjs className="mr-1" />}
-                logo2={<IconSupabase className="mr-1" />}
+                logo1={
+                  <IconNextjs width="16px" height="16px" className="mr-1" />
+                }
+                logo2={
+                  <IconSupabase width="16px" height="16px" className="mr-1" />
+                }
               />
             }
           />
@@ -106,7 +135,13 @@ export default function Home() {
             desc={"Data fetching with redux toolkit."}
             image={"/img/pokredux.png"}
             href="https://pokredux.vercel.app/"
-            stack={<Badge logo1={<IconNextjs className="mr-1" />} />}
+            stack={
+              <Badge
+                logo1={
+                  <IconNextjs width="16px" height="16px" className="mr-1" />
+                }
+              />
+            }
           />
         </div>
 

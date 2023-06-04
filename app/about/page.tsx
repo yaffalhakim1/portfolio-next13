@@ -3,6 +3,13 @@ import {
   GitHubIcon,
   LinkedinIcon,
   EmailIcon,
+  IconNextjs,
+  IconTailwind,
+  IconSupabase,
+  IconReactjs,
+  IconFlutter,
+  IconTypescript,
+  IconDart,
 } from "@/components/icons";
 import React from "react";
 
@@ -20,7 +27,7 @@ const page = () => {
         I already have experience building web app and now currently i focused
         on pursuit my career as a Front End Developer.
       </p>
-      <div className="border my-4" />
+      <div className="border my-4 md:w-9/12" />
       <p className="md:w-9/12 text-justify">
         Hello and welcome to my website! My name is Muhammad Yafi Alhakim, and
         I&apos;m a Front end Developer based in Semarang, Indonesia. I&apos;m
@@ -29,11 +36,8 @@ const page = () => {
       </p>
 
       <p className="md:w-9/12 text-justify">
-        I believe that software engineering is not just about do the code but
-        also understand what users need, and I strive to live my life in
-        accordance with those values. On this website, you&apos;ll find some
-        writings and things i have been build. I&apos;m excited to share
-        Next/ReactJS knowledge with you.
+        On this website, you&apos;ll find some writings and things i have been
+        build. I&apos;m excited to share Next/ReactJS knowledge with you.
       </p>
 
       <p className="md:w-9/12 text-justify">
@@ -41,6 +45,18 @@ const page = () => {
         the future holds. Thank you for visiting my website. If you have any
         questions or comments, please don&apos;t hesitate to contact me.
       </p>
+
+      <h1 className="font-bold text-lg">Current Tech Stack</h1>
+      <div className="flex space-x-2">
+        <IconNextjs width="24px" height="24px" />
+        <IconReactjs width="24px" height="24px" />
+        <IconFlutter width="24px" height="24px" />
+        <IconSupabase width="24px" height="24px" />
+
+        <IconTailwind width="24px" height="24px" />
+        <IconTypescript width="24px" height="24px" />
+        <IconDart width="24px" height="24px" />
+      </div>
 
       <div className="flex flex-col gap-2 md:flex-row md:gap-2">
         <a
