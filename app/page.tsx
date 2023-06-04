@@ -25,7 +25,7 @@ export default function Home() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://drive.google.com/file/d/1VUE6u6Z3Bi4gQvJHJcH3l9RI5ZTZbc6D/view?usp=share_link"
+            href="https://drive.google.com/file/d/1WaL3pUhv4lYsMMv27xWFZ_2hoSh3jLR4/view?usp=sharing"
             className="flex w-full md:w-3/12 border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
           >
             <div className="flex items-center">
