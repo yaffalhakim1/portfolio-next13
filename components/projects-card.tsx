@@ -15,13 +15,13 @@ const Projects = (props: ProjectProps) => {
   return (
     <>
       <a href={props.href}>
-        <div className="flex w-full border border-neutral-800 rounded-lg items-stretch  no-underline   hover:bg-neutral-900 hover:text-white  hover:dark:bg-neutral-900  hover:dark:text-white transition-all">
+        <div className="flex w-full rounded-lg no-underline hover:bg-neutral-900 hover:text-white  hover:dark:bg-neutral-900  hover:dark:text-white transition-all">
           <div className="">
             <img
               src={props.image}
-              width={200}
-              height={200}
-              className="rounded-t-lg w-full"
+              width={170}
+              height={170}
+              className="rounded-lg w-full"
               alt="Project Image"
             />
             <div className="mt-5 ml-[10px] mb-[10px] flex flex-col gap-2">
