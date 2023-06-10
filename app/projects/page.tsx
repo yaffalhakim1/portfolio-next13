@@ -14,6 +14,12 @@ const page = () => {
           <BlogContent key={item} />
         ))} */}
         <BlogContent
+          title={"Chill Out"}
+          desc={"Chill Out is a web makes you study with relax."}
+          image={"/img/chill.png"}
+          href="https://chill-out.vercel.app/"
+        />
+        <BlogContent
           title={"Anonymous Message"}
           desc={"Send anonymous message to you"}
           image={"/img/anonym.png"}

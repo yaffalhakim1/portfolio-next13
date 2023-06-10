@@ -24,7 +24,7 @@ const Projects = (props: ProjectProps) => {
               className="rounded-lg w-full"
               alt="Project Image"
             />
-            <div className="mt-5 ml-[10px] mb-[10px] flex flex-col gap-2">
+            <div className="mt-3 ml-[10px] mb-1 flex flex-col gap-2">
               <div className="text-lg font-bold hover:text-zinc-600">
                 {props.title}
               </div>

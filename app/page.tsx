@@ -53,6 +53,20 @@ export default function Home() {
         </h2>
         <div className="grid md:grid-cols-2 gap-2">
           <Projects
+            title={"Chill Out"}
+            desc={"Chill Out is a web makes you study with relax."}
+            image={"/img/chill.png"}
+            href="https://chill-out.vercel.app/"
+            stack={
+              <Badge
+                // techstack="NextJS"
+                logo1={
+                  <IconNextjs width="16px" height="16px" className="mr-1" />
+                }
+              />
+            }
+          />
+          <Projects
             title={"Anonymous Message"}
             desc={"Send anonymous message to you."}
             image={"/img/anonym.png"}
