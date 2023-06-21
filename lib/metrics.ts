@@ -34,6 +34,7 @@ export async function getGithubUserData() {
     public_repos: userData.public_repos,
     followers: userData.followers,
     following: userData.following,
+    // pullRequestData: pullRequestData,
     repos: reposData.map(
       (repo: { name: any; description: any; html_url: any }) => ({
         name: repo.name,
@@ -51,4 +52,16 @@ export async function getGithubUserData() {
   };
 
   return userDataWithReposAndStars;
+}
+
+export async function getLeetcode() {
+  const leet = await fetch(
+    "https://leetcode-stats-api.herokuapp.com/yaffalhakim1"
+  );
+
+  if (!leet.ok) {
+    throw new Error("Failed to fetch leetcode data");
+  }
+
+  return leet.json();
 }

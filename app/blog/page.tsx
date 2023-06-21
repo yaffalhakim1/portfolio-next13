@@ -19,9 +19,6 @@ const page = () => {
         .
       </p>
       <div className="flex flex-col gap-4 mt-8">
-        {/* {[0, 1, 2, 3, 4, 5].map((item) => (
-          <BlogContent key={item} />
-        ))} */}
         <Writing
           title={
             "My First Open-Source Contribution: Translating ReactJS Pages to Indonesian Language"

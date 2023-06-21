@@ -1,3 +1,6 @@
+import Badge from "@/components/Badge";
+import { IconNextjs, IconSupabase } from "@/components/icons";
+import Projects from "@/components/projects-card";
 import BlogContent from "@/components/projects-card";
 import React from "react";
 
@@ -13,23 +16,44 @@ const page = () => {
         {/* {[0, 1, 2, 3, 4, 5].map((item) => (
           <BlogContent key={item} />
         ))} */}
-        <BlogContent
+        <Projects
           title={"Chill Out"}
           desc={"Chill Out is a web makes you study with relax."}
           image={"/img/chill.png"}
           href="https://chill-out.vercel.app/"
+          stack={
+            <Badge
+              // techstack="NextJS"
+              logo1={<IconNextjs width="16px" height="16px" className="mr-1" />}
+            />
+          }
         />
-        <BlogContent
+        <Projects
           title={"Anonymous Message"}
-          desc={"Send anonymous message to you"}
+          desc={"Send anonymous message to you."}
           image={"/img/anonym.png"}
           href="https://anonymous-website-message.vercel.app/"
+          stack={
+            <Badge
+              // techstack="NextJS"
+              logo1={<IconNextjs width="16px" height="16px" className="mr-1" />}
+              logo2={
+                <IconSupabase width="16px" height="16px" className="mr-1" />
+              }
+            />
+          }
         />
-        <BlogContent
+        <Projects
           title={"Movies"}
           desc={"Simple movies web using NextJS"}
           image={"/img/movies.png"}
           href="https://movies-13.vercel.app/"
+          stack={
+            <Badge
+              // techstack="NextJS"
+              logo1={<IconNextjs width="16px" height="16px" className="mr-1" />}
+            />
+          }
         />
         <BlogContent
           title={"Simple E-commerce"}

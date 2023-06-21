@@ -15,7 +15,7 @@ const Projects = (props: ProjectProps) => {
   return (
     <>
       <a href={props.href}>
-        <div className="flex w-full rounded-lg no-underline hover:bg-neutral-900 hover:text-white  hover:dark:bg-neutral-900  hover:dark:text-white transition-all">
+        <div className="flex w-full rounded-lg no-underline  transition-all">
           <div className="">
             <img
               src={props.image}

@@ -3,6 +3,8 @@ import React from "react";
 export default function ExperiencePage() {
   return (
     <>
+      <h1 className="font-bold text-[36px]">Experience</h1>
+      <p className="mt-3">Here are some of my experience.</p>
       <div className="flex-col">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mt-4">
           Front End Developer -{" "}
